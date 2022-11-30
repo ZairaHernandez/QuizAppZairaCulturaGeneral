@@ -1,0 +1,296 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  font-size: 20px;
+  text-align: center;
+  background-color: #eee;
+  overflow-x: hidden;
+}
+
+#header {
+  border-bottom: 1px solid #666;
+  color: #222;
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ccc),
+    to(#999)
+  );
+}
+
+#header h1 {
+  text-shadow: 0px 1px 0px #fff;
+  font-weight: 300;
+  margin: 0px;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.question {
+  font-size: 30px;
+  margin: 0 5% 20px 5%;
+}
+
+.answers {
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+}
+
+.answers label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button p {
+  margin-top: -8px;
+}
+
+button {
+  font-weight: 200;
+  font-size: 20px;
+  width: 300px;
+  height: 50px;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  color: #fff;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#aaa),
+    to(#888)
+  );
+  margin-top: 15px;
+}
+
+button:hover {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#bbb),
+    to(#999)
+  );
+}
+
+.quiz-wrapper {
+  position: relative;
+  height: 200px;
+  margin: 30px 0 60px 0;
+}
+
+#results {
+  margin-top: 15px;
+  padding: 20px;
+}
+
+.slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.active-slide {
+  opacity: 1;
+  z-index: 2;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  text-shadow: 0px 1px 0px #fff;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ccc),
+    to(#999)
+  );
+}
+
+#footer h5 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+/* timer */
+
+h2 {
+  color: #333;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+
+#clockdiv {
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+#clockdiv > div {
+  padding: 10px;
+  border-radius: 100px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ccc),
+    to(#999)
+  );
+  display: inline-block;
+  border: solid 1px #333;
+  width: 100px;
+  height: 100px;
+}
+
+#clockdiv div > span {
+  padding: 15px;
+  border-radius: 3px;
+  background: #333;
+  display: inline-block;
+}
+
+.smalltext {
+  padding-top: 3px;
+  font-size: 16px;
+}
+
+/* ---------- FORM STYLES ------------------ */
+form {
+  color: #333;
+  font-weight: bold;
+}
+.formLabel {
+  font-size: 16px;
+  width: 10%;
+}
+.formArea,
+.formInput,
+.formSelect {
+  font-size: 25px;
+}
+.formArea {
+  width: 80%;
+}
+.formInput {
+  width: 50%;
+}
+.formSelect {
+  width: 25%;
+  text-align: center;
+}
+
+/*-----------------Menu----------------*/
+#showQstn {
+  text-align: left;
+  display: block;
+  margin: 0 auto 0 auto;
+  width: 420px;
+}
+
+#showQstn label:first-of-type {
+  margin-left: 10px;
+}
+
+.chk_butn {
+  transform: scale(200%);
+  margin: 10px 30px 5px -20px;
+}
+
+.wrapper {
+  position: relative;
+  margin: 30px 0 20px 0;
+}
+
+#footer2 {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  text-shadow: 0px 1px 0px #fff;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ccc),
+    to(#999)
+  );
+}
+
+#footer2 h5 {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+#menu {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+
+#menu:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+}
+
+#menubox {
+  position: absolute;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ccc),
+    to(#999)
+  );
+  padding: 20px;
+  border: solid 1px #333;
+  width: 80vw;
+  margin: 50px 0 0 7vw;
+  height: 200px;
+  z-index: 10;
+  font-size: 1.7em;
+}
+
+#menubox a {
+  color: #333;
+  text-shadow: 0px 1px 0px #fff;
+  text-decoration: none;
+}
+
+#menubox a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#menubox #menudismiss {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: rgb(102, 100, 100);
+}
+
+#menubox #menudismiss:hover {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+}

@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <title> Zaira Quiz Bank Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/app.css" />
+    <script type="text/javascript" src="json/questions.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <h1>QuizBank<br />Add a question: <span id="qCount"></span></h1>
+      <span id="menu"></span>
+      <div id="menubox" style="display: none">
+        <br /><a href="index.html" alt="back to quiz" title="back to quiz">
+          Back to Quiz </a
+        ><br /><br />
+        <a
+          href="remove_question.html"
+          alt="remove questions"
+          title="remove questions"
+        >
+          Drop Questions
+        </a>
+        <span id="menudismiss"> X </span>
+      </div>
+    </div>
+
+    <div class="quiz-wrapper">
+      <form id="addQuestion" onsubmit="submitForm(event)">
+        <label class="formLabel">Question Number:</label><br />
+        <label class="formLabel">Question:</label>
+        <textarea
+          maxlength="200"
+          cols="50"
+          rows="5"
+          class="formArea"
+          placeholder="A&ntilde;ade tu pregunta. Incluye el signo de pregunta (?) al terminar"
+          id="q"
+          name="q"
+          required
+        ></textarea
+        ><br />
+        <label class="formLabel">Respuesta A:</label>
+        <input
+          type="text"
+          maxlength="100"
+          size="100"
+          class="formInput"
+          id="a"
+          name="a"
+          required
+        /><br />
+        <label class="formLabel">Respuesta B:</label>
+        <input
+          type="text"
+          maxlength="100"
+          size="100"
+          class="formInput"
+          id="b"
+          name="b"
+          required
+        /><br />
+        <label class="formLabel">Respuesta C:</label>
+        <input
+          type="text"
+          maxlength="100"
+          size="100"
+          class="formInput"
+          id="c"
+          name="c"
+          required
+        /><br />
+        <label class="formLabel">Respuesta D:</label>
+        <input
+          type="text"
+          maxlength="100"
+          size="100"
+          class="formInput"
+          id="d"
+          name="d"
+          required
+        /><br />
+        <label class="formLabel">Respuesta correcta:</label><br />
+        <select id="ca" name="ca" class="formSelect" required>
+          <option value="" selected disabled>Elije</option>
+          <option value="a">- A -</option>
+          <option value="b">- B -</option>
+          <option value="c">- C -</option>
+          <option value="d">- D -</option></select
+        ><br /><br />
+        <button id="submitQuestion">
+          <p>Enviar pregunta</p></button
+        ><br /><br /><br />
+        <button id="saveMyquestions">
+          <p>Guardar pregunta</p>
+        </button>
+      </form>
+    </div>
+    <div id="footer">
+      <h5>Written by Zaira Hernandez &copy; Copyright November 2021</h5>
+    </div>
+    <script src="js/addquestions.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>
